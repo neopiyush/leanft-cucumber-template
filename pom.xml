@@ -26,38 +26,38 @@
 	<dependency>
 		<groupId>com.hp.lft</groupId>
 		<artifactId>sdk</artifactId>
-		<version>14.3</version>
+		<version>14.0.1</version>
 		<scope>system</scope>
-		<!-- for windows -->
-		<!-- <systemPath>C:/Program Files (x86)/HPE/LeanFT/SDK/Java/com.hp.lft.sdk-standalone.jar</systemPath> -->
-		<systemPath>/opt/leanft/sdk/Java/com.hp.lft.sdk-standalone.jar</systemPath>
+		
+		<systemPath>C:/Program Files (x86)/HPE/LeanFT/SDK/Java/com.hp.lft.sdk-standalone.jar</systemPath>
+		
 	</dependency>
 
       <dependency>
           <groupId>com.hp.lft</groupId>
           <artifactId>report</artifactId>
-          <version>14.3</version>
+          <version>14.0.1</version>
           <scope>system</scope>
-          <!-- <systemPath>C:/Program Files (x86)/HPE/LeanFT/SDK/Java/com.hp.lft.report.jar</systemPath> -->
-      	<systemPath>/opt/leanft/sdk/Java/com.hp.lft.report.jar</systemPath>
+          <systemPath>C:/Program Files (x86)/HPE/LeanFT/SDK/Java/com.hp.lft.report.jar</systemPath>
+      	
       </dependency>
 
       <dependency>
           <groupId>com.hp.lft</groupId>
           <artifactId>unittesting</artifactId>
-          <version>14.3</version>
+          <version>14.0.1</version>
           <scope>system</scope>
-          <!-- <systemPath>C:/Program Files (x86)/HPE/LeanFT/SDK/Java/com.hp.lft.unittesting.jar</systemPath> -->
-          <systemPath>/opt/leanft/sdk/Java/com.hp.lft.unittesting.jar</systemPath>
+          <systemPath>C:/Program Files (x86)/HPE/LeanFT/SDK/Java/com.hp.lft.unittesting.jar</systemPath>
+          
       </dependency>
 
       <dependency>
           <groupId>com.hp.lft</groupId>
           <artifactId>verifications</artifactId>
-          <version>14.3</version>
+          <version>14.0.1</version>
           <scope>system</scope>
-          <!-- <systemPath>C:/Program Files (x86)/HPE/LeanFT/SDK/Java/com.hp.lft.verifications.jar</systemPath> -->
-          <systemPath>/opt/leanft/sdk/Java/com.hp.lft.verifications.jar</systemPath>
+          <systemPath>C:/Program Files (x86)/HPE/LeanFT/SDK/Java/com.hp.lft.verifications.jar</systemPath>
+          
       </dependency>
         
         <dependency>

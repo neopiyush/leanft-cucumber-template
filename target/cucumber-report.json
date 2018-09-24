@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 1327321805,
+              "duration": 4755847728,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 13,
-        "name": "Successful Login with Valid Credentials",
+        "line": 16,
+        "name": "Successful Register on newtours portal",
         "description": "",
-        "id": "login;successful-login-with-valid-credentials;;2",
+        "id": "registration;successful-register-on-newtours-portal;;2",
         "after": [
           {
             "result": {
-              "duration": 1558196225,
+              "duration": 1601940782,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2220939089,
+              "duration": 5209723568,
               "status": "passed"
             },
             "line": 5,
@@ -52,183 +52,163 @@
           },
           {
             "result": {
-              "duration": 4414838466,
+              "duration": 345108531,
               "status": "passed"
             },
             "line": 6,
-            "name": "User logs in using username as \"tutorial\" and password as \"tutorial\"",
+            "name": "User click on Register Link",
+            "match": {
+              "location": "StepDefinitions.user_click_on_Register_Link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2843527135,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter Contact information \"neo\" , \"automation\" , \"9999911111\" and \"neo@test.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "tutorial",
-                  "offset": 32
+                  "val": "neo",
+                  "offset": 27
                 },
                 {
-                  "val": "tutorial",
-                  "offset": 59
+                  "val": "automation",
+                  "offset": 35
+                },
+                {
+                  "val": "9999911111",
+                  "offset": 50
+                },
+                {
+                  "val": "neo@test.com",
+                  "offset": 67
                 }
               ],
-              "location": "StepDefinitions.user_logs_in_using_username_as_and_password_as(String,String)"
+              "location": "StepDefinitions.enter_Contact_information_and(String,String,String,String)"
             },
             "matchedColumns": [
               0,
-              1
+              1,
+              2,
+              3
             ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 14350092,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "login should be successful",
-            "match": {
-              "location": "StepDefinitions.login_should_be_successful()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2818874518,
+              "duration": 1102290931,
               "status": "passed"
             },
             "line": 8,
-            "name": "User presses Sign Out button",
-            "match": {
-              "location": "StepDefinitions.user_presses_Sign_Out_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 14635007,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "logout should be successful",
-            "match": {
-              "location": "StepDefinitions.logout_should_be_successful()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@regression"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 215661827,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.launchBrowser()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "Successful Login with Valid Credentials",
-        "description": "",
-        "id": "login;successful-login-with-valid-credentials;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 1537100220,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.closeBrowser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1494366947,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on \"Home\" Page",
+            "name": "Enter mailing information \"14th cross\" , \"Indore\" , \"MP\" , \"12\" and \"INDIA\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Home",
-                  "offset": 12
-                }
-              ],
-              "location": "StepDefinitions.user_is_on_Page(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4872342504,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User logs in using username as \"leanft\" and password as \"leanft\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "leanft",
-                  "offset": 32
+                  "val": "14th cross",
+                  "offset": 27
                 },
                 {
-                  "val": "leanft",
-                  "offset": 57
+                  "val": "Indore",
+                  "offset": 42
+                },
+                {
+                  "val": "MP",
+                  "offset": 53
+                },
+                {
+                  "val": "12",
+                  "offset": 60
+                },
+                {
+                  "val": "INDIA",
+                  "offset": 69
                 }
               ],
-              "location": "StepDefinitions.user_logs_in_using_username_as_and_password_as(String,String)"
+              "location": "StepDefinitions.enter_mailing_information_and(String,String,String,String,String)"
             },
             "matchedColumns": [
-              0,
-              1
+              4,
+              5,
+              6,
+              7,
+              8
             ],
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 14472803,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "login should be successful",
-            "match": {
-              "location": "StepDefinitions.login_should_be_successful()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1350364958,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User presses Sign Out button",
-            "match": {
-              "location": "StepDefinitions.user_presses_Sign_Out_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 18315621,
+              "duration": 764377235,
               "status": "passed"
             },
             "line": 9,
-            "name": "logout should be successful",
+            "name": "Enter user information \"neoautomation\" and \"neo@test\"",
             "match": {
-              "location": "StepDefinitions.logout_should_be_successful()"
+              "arguments": [
+                {
+                  "val": "neoautomation",
+                  "offset": 24
+                },
+                {
+                  "val": "neo@test",
+                  "offset": 44
+                }
+              ],
+              "location": "StepDefinitions.enter_user_information_and(String,String)"
+            },
+            "matchedColumns": [
+              9,
+              10
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 199232909,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on Register button",
+            "match": {
+              "location": "StepDefinitions.click_on_Register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25461739393,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "UserName should be generated",
+            "match": {
+              "location": "StepDefinitions.username_should_be_generated()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 138956721,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Generated UserName should be same as \"neo@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "neo@test.com",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.generated_UserName_should_be_same_as_neoautomation(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -239,10 +219,10 @@
         ]
       }
     ],
-    "name": "Login",
+    "name": "Registration",
     "description": "",
-    "id": "login",
+    "id": "registration",
     "keyword": "Feature",
-    "uri": "Login.feature"
+    "uri": "Registration.feature"
   }
 ]
