@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 4755847728,
+              "duration": 3827853715,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 16,
-        "name": "Successful Register on newtours portal",
+        "name": "Successful Registration on newtours portal",
         "description": "",
-        "id": "registration;successful-register-on-newtours-portal;;2",
+        "id": "registration;successful-registration-on-newtours-portal;;2",
         "after": [
           {
             "result": {
-              "duration": 1601940782,
+              "duration": 1590731665,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5209723568,
+              "duration": 3074188993,
               "status": "passed"
             },
             "line": 5,
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 345108531,
+              "duration": 664878419,
               "status": "passed"
             },
             "line": 6,
@@ -64,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 2843527135,
+              "duration": 3636980569,
               "status": "passed"
             },
             "line": 7,
@@ -100,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 1102290931,
+              "duration": 1202016734,
               "status": "passed"
             },
             "line": 8,
@@ -141,7 +141,7 @@
           },
           {
             "result": {
-              "duration": 764377235,
+              "duration": 648207054,
               "status": "passed"
             },
             "line": 9,
@@ -167,7 +167,7 @@
           },
           {
             "result": {
-              "duration": 199232909,
+              "duration": 177944865,
               "status": "passed"
             },
             "line": 10,
@@ -179,7 +179,7 @@
           },
           {
             "result": {
-              "duration": 25461739393,
+              "duration": 5411983865,
               "status": "passed"
             },
             "line": 11,
@@ -191,7 +191,7 @@
           },
           {
             "result": {
-              "duration": 138956721,
+              "duration": 151057593,
               "status": "passed"
             },
             "line": 12,

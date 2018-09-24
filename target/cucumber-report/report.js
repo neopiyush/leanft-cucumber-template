@@ -8,9 +8,9 @@ formatter.feature({
 });
 formatter.scenarioOutline({
   "line": 4,
-  "name": "Successful Register on newtours portal",
+  "name": "Successful Registration on newtours portal",
   "description": "",
-  "id": "registration;successful-register-on-newtours-portal",
+  "id": "registration;successful-registration-on-newtours-portal",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
@@ -64,7 +64,7 @@ formatter.examples({
   "line": 14,
   "name": "",
   "description": "",
-  "id": "registration;successful-register-on-newtours-portal;",
+  "id": "registration;successful-registration-on-newtours-portal;",
   "rows": [
     {
       "cells": [
@@ -81,7 +81,7 @@ formatter.examples({
         "password"
       ],
       "line": 15,
-      "id": "registration;successful-register-on-newtours-portal;;1"
+      "id": "registration;successful-registration-on-newtours-portal;;1"
     },
     {
       "cells": [
@@ -98,20 +98,20 @@ formatter.examples({
         "neo@test"
       ],
       "line": 16,
-      "id": "registration;successful-register-on-newtours-portal;;2"
+      "id": "registration;successful-registration-on-newtours-portal;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 4755847728,
+  "duration": 3827853715,
   "status": "passed"
 });
 formatter.scenario({
   "line": 16,
-  "name": "Successful Register on newtours portal",
+  "name": "Successful Registration on newtours portal",
   "description": "",
-  "id": "registration;successful-register-on-newtours-portal;;2",
+  "id": "registration;successful-registration-on-newtours-portal;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -191,14 +191,14 @@ formatter.match({
   "location": "StepDefinitions.user_is_on_Page(String)"
 });
 formatter.result({
-  "duration": 5209723568,
+  "duration": 3074188993,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.user_click_on_Register_Link()"
 });
 formatter.result({
-  "duration": 345108531,
+  "duration": 664878419,
   "status": "passed"
 });
 formatter.match({
@@ -223,7 +223,7 @@ formatter.match({
   "location": "StepDefinitions.enter_Contact_information_and(String,String,String,String)"
 });
 formatter.result({
-  "duration": 2843527135,
+  "duration": 3636980569,
   "status": "passed"
 });
 formatter.match({
@@ -252,7 +252,7 @@ formatter.match({
   "location": "StepDefinitions.enter_mailing_information_and(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 1102290931,
+  "duration": 1202016734,
   "status": "passed"
 });
 formatter.match({
@@ -269,21 +269,21 @@ formatter.match({
   "location": "StepDefinitions.enter_user_information_and(String,String)"
 });
 formatter.result({
-  "duration": 764377235,
+  "duration": 648207054,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.click_on_Register_button()"
 });
 formatter.result({
-  "duration": 199232909,
+  "duration": 177944865,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.username_should_be_generated()"
 });
 formatter.result({
-  "duration": 25461739393,
+  "duration": 5411983865,
   "status": "passed"
 });
 formatter.match({
@@ -296,11 +296,11 @@ formatter.match({
   "location": "StepDefinitions.generated_UserName_should_be_same_as_neoautomation(String)"
 });
 formatter.result({
-  "duration": 138956721,
+  "duration": 151057593,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1601940782,
+  "duration": 1590731665,
   "status": "passed"
 });
 });

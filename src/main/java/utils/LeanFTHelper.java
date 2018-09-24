@@ -25,7 +25,7 @@ public class LeanFTHelper {
 	    SDK.init(config);		   
 	    Reporter.init();
 	    
-	    logger.info("SDK Initialized");
+	    logger.info("LeanFT SDK Initialized");
 	}
 	
 	public static Browser launchBrowser() throws GeneralLeanFtException, IOException
@@ -53,7 +53,7 @@ public class LeanFTHelper {
 	    }
 		
 	    browser = BrowserFactory.launch(bType);
-	    logger.info("Browser Launched");
+	    logger.info(bType.getBrowserTypeString() + " Browser Launched ");
 		
 		return browser;
 	}

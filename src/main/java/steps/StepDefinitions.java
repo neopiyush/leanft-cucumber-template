@@ -10,13 +10,19 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
+import org.apache.log4j.Logger;
 import org.junit.Assert;
+
+import pages.BasePage;
 import pages.HomePage;
 import pages.RegistrationPage;
 import utils.LeanFTHelper;
 import utils.PropertiesManager;
 
 public class StepDefinitions{
+	
+	final static Logger logger = Logger.getLogger(StepDefinitions.class);
 	
 	public static Browser browser;
 	
@@ -57,6 +63,7 @@ public class StepDefinitions{
 			browser.navigate(PropertiesManager.getProperty("websiteURL"));
 			//Check that the Home Page is present
 			Assert.assertTrue(HP.checkHomePageExists());
+			logger.info("Navigated to Home Page");
 		}
 	}
 
@@ -65,6 +72,7 @@ public class StepDefinitions{
 	    
 		HomePage HP = new HomePage(browser);
 		Assert.assertTrue(HP.clickREGISTERLink());
+		logger.info("Clicked on Register Link");
 	}
 
 	@When("^Enter Contact information \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" and \"([^\"]*)\"$")
@@ -75,7 +83,7 @@ public class StepDefinitions{
 		Assert.assertTrue(RP.enterLastName(lastName));
 		Assert.assertTrue(RP.enterPhoneNumber(phoneNumber));
 		Assert.assertTrue(RP.enterEmailID(emailID));
-		
+		logger.info("Contact information entered");
 	}
 
 	@When("^Enter mailing information \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" and \"([^\"]*)\"$")
@@ -87,6 +95,7 @@ public class StepDefinitions{
 		Assert.assertTrue(RP.enterState(state));
 		Assert.assertTrue(RP.enterPostalCode(postalCode));
 		Assert.assertTrue(RP.selectCountry(country));
+		logger.info("Mailing information entered");
 	}
 
 	@When("^Enter user information \"([^\"]*)\" and \"([^\"]*)\"$")
@@ -96,6 +105,7 @@ public class StepDefinitions{
 		Assert.assertTrue(RP.enterUserName(userName));
 		Assert.assertTrue(RP.enterPassword(password));
 		Assert.assertTrue(RP.enterConfirmPassword(password));
+		logger.info("User information entered");
 	}
 
 	@When("^click on Register button$")
@@ -103,6 +113,7 @@ public class StepDefinitions{
 	    
 		RegistrationPage RP = new RegistrationPage(browser);
 		Assert.assertTrue(RP.clickRegister());
+		logger.info("Clicked on Rgister button to submit form");
 	}
 
 	@Then("^UserName should be generated$")
@@ -110,39 +121,17 @@ public class StepDefinitions{
 		
 		RegistrationPage RP = new RegistrationPage(browser);
 		Assert.assertTrue(RP.isUserNameGenerated());
+		logger.info("UserName generated");
 	}
 
 
 	@Then("^Generated UserName should be same as \"([^\"]*)\"$")
 	public void generated_UserName_should_be_same_as_neoautomation(String sExpectedUserName) throws Throwable {
 		RegistrationPage RP = new RegistrationPage(browser);
-		Assert.assertEquals(RP.getGeneratedUserName(), sExpectedUserName);
-	
+		String aActualUserName = RP.getGeneratedUserName();
+		Assert.assertEquals(aActualUserName, sExpectedUserName);
+		logger.info("Actual User Name is " + aActualUserName);
 		
 	}
 
-	/*@When("^User logs in using username as \"([^\"]*)\" and password as \"([^\"]*)\"$")
-	public void user_logs_in_using_username_as_and_password_as(String username, String password) throws Throwable {
-		HomePage HP = new HomePage(browser);
-		HP.login(username, password);
-	}
-
-	@Then("^login should be successful$")
-	public void login_should_be_successful() throws Exception {
-		HomePage HP = new HomePage(browser);
-	    Assert.assertTrue(HP.isLoggedIn());
-	}
-
-	@When("^User presses Sign Out button$")
-	public void user_presses_Sign_Out_button() throws Throwable {
-		HomePage HP = new HomePage(browser);
-		HP.logOut();
-	}
-
-	@Then("^logout should be successful$")
-	public void logout_should_be_successful() throws Throwable {
-		HomePage HP = new HomePage(browser);
-	    Assert.assertTrue(HP.isLoggedOut());
-	}
-*/
 }

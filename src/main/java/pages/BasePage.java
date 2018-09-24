@@ -25,7 +25,7 @@ public class BasePage {
 		this.browser = browser;
 		try {
 			appModel = new AppModel(this.browser);
-			logger.info("Application Model Intitialized");
+			
 		} catch (GeneralLeanFtException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
